@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Postal Rate Calculator</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	<!-- Latest compiled and minified CSS for Bootstrap -->
+	<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+
+	<!-- Latest compiled JavaScript for Bootstrap -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+
+	<link rel="stylesheet" href="stylesheets/main.css">
+</head>
+
+<body>
+	<div class="container">
+	<h1>Postal Rate Calculator</h1>
+	
+	<form action="/getRate" method="get">
+		<div class="row">
+		<div class="col-sm-5">
+		Weight: <input type="text" name="weight" class="form-control" /> oz.
+		</div>
+		<div class="col-sm-6">
+		Type: 
+		<select name="mailType" class="form-control">
+			<option>Letter (Stamped)</option>
+			<option>Letter (Metered)</option>
+			<option>Large Envelope (Flat)</option>
+			<option>First-Class Package Service-Retail</option>
+		</select>
+		</div>
+		</div>
+		<br/>
+		<button type="submit" class="btn btn-success" value="Get Rate">
+			Calculate Rate
+		</button>
+	</form>
+	</div>
+</body>
+</html>
